@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Single Page Application</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="../libs/angular.min.js"></script>
+    <script src="../module/app.js"></script>
+    <script src="../libs/angular-route.min.js"></script>
+    <script src="../model/factory.js"></script>
+    <script src="../controller/ctrl.js"></script>
+    <script src="../route/spa-routes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-app="spaapp" ng-controller="ctrl" ng-init="init()">
+    <div class="container">
+        <div class="row">
+            <div class="row" align="center">
+                <h1 id="h">FLIPKART</h1>
+                <h3>Your very own personal store</h3>
+                <br>
+                <br>
+                <input type="text" placeholder="What are you thinking today !?!" ng-model="search" id="i">
+                <button id="b">Search</button>
+                <span>Sort By : </span>
+                <select name="" id="" ng-model="sortby" ng-init="sortby='name'">
+                    <option value="">name</option>
+                    <option value="">price</option>
+                    <option value="">colour</option>
+                    <option value="">type</option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" id="c" ng-model="reverseorder" ng-init="reverseorder=false"><span>Reverse Order</span>
+                <button id="b">Sign In</button>
+                <button id="b">Sign Up</button>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <ul ng-repeat="l in list" id="u">
+                        <li id="l"><a ng-href="#/{{l.object}}" ng-click="show(l)" ng-init="show(list[0])">{{l.object}}</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" id="a">
+                            <ng-view></ng-view>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

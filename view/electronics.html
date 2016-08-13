@@ -1,0 +1,21 @@
+<div class="row">
+<div class="col-sm-12" ng-repeat="c in collection" ng-click="e(c.object)">
+            <ul>
+            <li id="l1"><a href="">{{c.object}}</a></li>
+            </ul>
+</div>    
+<div class="col-sm-12">
+    <table align="center">
+        <tr ng-repeat="q in p|filter:search|orderBy:sortby:reverseorder">
+            <td><img src="{{q.img}}"></td>
+            <td>
+                <ul>
+                    <li>{{q.name}}</li>
+                    <li>{{q.colour}}</li>
+                    <li>{{q.price}}</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>

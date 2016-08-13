@@ -1,0 +1,32 @@
+[
+    {
+        "img": "https://www.skymartbw.com/wp-content/uploads/2014/10/Asus-X-Series-X552LDV-SX816D-main-pic.png",
+        "name": "Dell XPS 13",
+        "price": 60000,
+        "colour": "black"
+    },
+    {
+        "img": "http://encorepc.stonegroup.co.uk/image/cache/catalog/HP/HP%2013-4105NA/HP%20Spectre%20X360%2013-4105NA-200x200.PNG",
+        "name": "HP Spectre 360",
+        "price": 50000,
+        "colour": "white"
+    },
+    {
+        "img": "http://www.scanmalta.com/scanshop/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/n/b/nbo-l11837_1.png",
+        "name": "Apple Macbook Air 13",
+        "price": 55000,
+        "colour": "silver"
+    },
+    {
+        "img": "http://tubby.scene7.com/is/image/tubby/LE80N400FKMT?$socialsharing$",
+        "name": "Lenovo Yoga 500",
+        "price": 65000,
+        "colour": "silver"
+    },
+    {
+        "img": "https://www.telekom.hu/shop/static-tkws-media/sku/LENOVO_Z51_70_HUA_E3372H__B/ProductPictures/ProductPictures02/lenovo_z51_70_blk_02_200.png",
+        "name": "Lenovo Z51-70",
+        "price": 75000,
+        "colour": "spacegrey"
+    }
+]
